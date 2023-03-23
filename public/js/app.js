@@ -7454,10 +7454,7 @@ var render = function render() {
     }) : _c("i", {
       staticClass: "bi bi-person-fill-gear icon"
     }), _vm._v("\n              " + _vm._s(item[2]) + "\n            ")]), _vm._v(" "), _c("td", [_vm._v(" " + _vm._s(item[3]))]), _vm._v(" "), _c("td", [_vm._v(" " + _vm._s(item[4]))]), _vm._v(" "), _c("td", [_vm._v(" " + _vm._s(item[5]))]), _vm._v(" "), _c("td", [_vm._v(" " + _vm._s(item[6]))]), _vm._v(" "), _c("td", [_vm._v(" " + _vm._s(item[7]))]), _vm._v(" "), _c("td", [item[8] == "Completed" ? _c("button", {
-      staticClass: "btn btn-success btn-sm",
-      staticStyle: {
-        "font-size": "x-small"
-      },
+      staticClass: "btn btn-success badge badge-pill bg-success",
       attrs: {
         id: "btn-cancel"
       }
@@ -7467,21 +7464,18 @@ var render = function render() {
         position: "relative"
       }
     }, [_c("button", {
-      staticClass: "btn btn-secondary btn-sm",
-      staticStyle: {
-        "font-size": "x-small"
-      },
+      staticClass: "btn btn-secondary badge badge-pill bg-secondary",
       attrs: {
         id: "btn-cancel"
       }
-    }, [_vm._v(_vm._s(item[8]))]), _vm._v(" "), _c("a", {
+    }, [_vm._v(_vm._s(item[8]) + "\n                "), _c("a", {
       staticStyle: {
         position: "absolute",
-        "margin-left": "-24px",
-        "margin-top": "3px",
+        "margin-left": "10px",
+        "margin-top": "-1px",
         "background-color": "#0F6EC4",
         "border-radius": "50%",
-        width: "20px",
+        width: "15px",
         "font-size": "12px",
         "text-align": "center",
         "text-decoration": "none",
@@ -7493,7 +7487,7 @@ var render = function render() {
         "data-bs-placement": "top",
         "data-bs-content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas"
       }
-    }, [_vm._v("i")])])])]);
+    }, [_vm._v("i")])])])])]);
   }), 0)])])])]);
 };
 

@@ -132,26 +132,29 @@
               <td> {{ item[6] }}</td>
               <td> {{ item[7] }}</td>
               <td>
-                <button style="font-size: x-small;" id="btn-cancel" v-if="item[8]=='Completed'" class="btn btn-success btn-sm">{{ item[8] }}</button>
-                <p style="margin-bottom: 0px; position:relative" v-else>
-                  <button style="font-size: x-small;" id="btn-cancel" class="btn btn-secondary btn-sm">{{ item[8] }}</button>
+                <button id="btn-cancel" v-if="item[8]=='Completed'" class="btn btn-success badge badge-pill bg-success">{{ item[8] }}</button>
+                <!-- <button style="font-size: x-small;" id="btn-cancel" v-if="item[8]=='Completed'" class="btn btn-success btn-sm">{{ item[8] }}</button> -->
+                
+                  <p style="margin-bottom: 0px; position:relative" v-else>
+                    <button id="btn-cancel" class="btn btn-secondary badge badge-pill bg-secondary">{{ item[8] }}
                   <a href="#" data-bs-toggle="popover" data-bs-placement="top"
                                         data-bs-content="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas" 
                                         style="
                                                 position: absolute;
-                                                margin-left: -24px;
-                                                margin-top: 3px;
+                                                margin-left: 10px;
+                                                margin-top: -1px;
                                                 background-color:#0F6EC4
                                                 border: 1px solid black;
                                                 border-radius: 50%;
-                                                width: 20px;
+                                                width: 15px;
                                                 font-size: 12px;
                                                 text-align: center;
                                                 text-decoration: none;
                                                 color: white;
                                             ">i</a>
-                </p>
                 
+                </button>
+              </p>
               </td>
               <!-- <td v-for="(rowItem, rowIndex) in item" v-bind:key="rowIndex">                           
                 {{ rowItemb }}                       
